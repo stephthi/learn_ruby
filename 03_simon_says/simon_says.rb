@@ -25,6 +25,13 @@ def first_word(string)
 end
 
 def titleize(string)
-	lowercase = ["and", "over the"]
-	string.split.each { |word| word.capitalize!}.join(" ")
+	string.capitalize!
+	lowercase = ["and", "over", "the"]
+	string.split.map { |word|
+	if lowercase.include?(word)
+		word
+	else
+		word.capitalize
+	end
+	}.join(" ")
 end
