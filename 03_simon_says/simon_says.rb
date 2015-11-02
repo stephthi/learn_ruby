@@ -16,27 +16,12 @@ def repeat(string, num = 2)
 		output.join(' ')
 end
 
-def start_of_word(string, num = 1)
-	s = "abcdef"
-	if string == "hello" && num == 1
-		"h"
-	elsif string == "Bob" && num == 2
-		"Bo"
-	elsif s == "acbdef" && num == 1
-		"a"
-	elsif s == "abcdef" && num == 2
-		"ab"
-	else
-		"abc"
-	end
+def start_of_word(string, num)
+	string[0..num -1]
 end
 
-def first_word(input)
-	if input == "Hello World"
-		"Hello"
-	else
-		"oh"
-	end
+def first_word(string)
+	string.split(" ").first
 end
 
 def titleize(titles)
