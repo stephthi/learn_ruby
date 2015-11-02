@@ -24,14 +24,7 @@ def first_word(string)
 	string.split(" ").first
 end
 
-def titleize(titles)
-	if titles == "jaws"
-		"Jaws"
-	elsif titles == "david copperfield"
-		"David Copperfield"
-	elsif titles == "war and peace"
-		"War and Peace"
-	else
-		"The Bridge over the River Kwai"
-	end
+def titleize(string)
+	lowercase = ["and", "over the"]
+	string.split.each { |word| word.capitalize!}.join(" ")
 end
