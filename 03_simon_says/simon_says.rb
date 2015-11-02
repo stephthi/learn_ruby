@@ -7,12 +7,13 @@ def shout(input)
 end
 
 
-def repeat(string, num = 1)
-	if string == "hello" && num == 3
-		"hello hello hello"
-	else
-		"hello hello"
+def repeat(string, num = 2)
+	output = []
+	while num > 0
+		output.push(string)
+		num -= 1
 	end
+		output.join(' ')
 end
 
 def start_of_word(string, num = 1)
