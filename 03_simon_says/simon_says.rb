@@ -1,17 +1,9 @@
 def echo(input)
-	if input == "hello"
-		"hello"
-	else
-		"bye"
-	end
+	input
 end
 
 def shout(input)
-	if input == "hello"
-		"HELLO"
-	else
-		"HELLO WORLD"
-	end
+	input.upcase
 end
 
 
