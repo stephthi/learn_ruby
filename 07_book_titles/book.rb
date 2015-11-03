@@ -7,7 +7,7 @@ class Book
 
 	def titlelize(title)
 		title.capitalize!
-		lowercase = ["and", "over", "the", "a", "in"]
+		lowercase = ["and", "over", "the", "a", "in", "of", "an"]
 		title.split.map { |word|
 		if lowercase.include?(word)
 			word
