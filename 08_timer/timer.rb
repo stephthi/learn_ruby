@@ -5,5 +5,9 @@ class Timer
 		@seconds = 0
 	end
 
+	def time_string
+
+	end
+
 end
 
